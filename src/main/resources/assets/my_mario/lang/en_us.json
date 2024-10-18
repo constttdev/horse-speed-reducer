@@ -1,4 +1,4 @@
 {
-  "category.my_mario.keys": "My Mario",
-  "key.my_mario.reducer_key": "Horse Speed Reducer"
+  "category.horse_speed_reducer.keys": "Horse Speed reducer",
+  "key.horse_speed_reducer.reduce_horse_speed": "Reduce Speed (-2%)"
 }
