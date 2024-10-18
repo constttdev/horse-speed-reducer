@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "horse_speed_reducer",
+  "version": "${version}",
+  "name": "Horse Speed Reducer",
+  "description": "Reduces horse speed on keybind",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/horse_speed_reducer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "work.constt.horse_speed_reducer.client.Horse_speed_reducerClient"
+    ],
+    "main": [
+      "work.constt.horse_speed_reducer.Horse_speed_reducer"
+    ]
+  },
+  "mixins": [
+    "horse_speed_reducer.mixins.json",
+    {
+      "config": "horse_speed_reducer.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
